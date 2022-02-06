@@ -1,27 +1,86 @@
+@use './mixins' as m;
+@use './variables' as v;
+
 html,
 body {
-  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  background-color: v.$bg;
+  color: v.$base-font-color;
+  font-family: v.$base-font-family;
+  font-size: 16px;
+  font-weight: v.$base-font-weight;
+  letter-spacing: 0.25px;
+  line-height: v.$base-line-height;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
+  padding: 0;
 }
 
-* {
+main {
+  padding-top: calc(55px + v.$padding);
+}
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+// Don't show focus outline until tabbed
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+hr {
+  border-bottom: v.$base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 45px 0 10px;
+}
+
+blockquote {
+  border-left: 2px solid v.$base-font-color;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+p,
+caption {
+  margin: 0 0 1.6em;
+}
+
+a {
+  color: v.$action-color;
+  text-decoration-skip: auto;
+  transition: color v.$base-duration v.$base-timing;
+
+  &:hover {
+    color: v.$black;
+  }
+
+  p & {
+    border-bottom: v.$base-border;
+  }
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  @include m.remove-list-formatting;
 }
