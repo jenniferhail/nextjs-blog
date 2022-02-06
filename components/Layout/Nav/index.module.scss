@@ -1,0 +1,19 @@
+@use '../../../styles/variables' as v;
+@use '../../../styles/typography' as t;
+
+.item {
+  display: inline;
+
+  &:first-child:after {
+    content: '/';
+    padding: 0 1px 0 5px;
+  }
+
+  a {
+    border: none;
+  }
+}
+
+.list {
+  padding: 0;
+}

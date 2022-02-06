@@ -1,0 +1,35 @@
+@use '../../../styles/variables' as v;
+@use '../../../styles/typography' as t;
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+  align-items: center;
+
+  position: fixed;
+  width: 100%;
+  padding: 15px v.$padding;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: v.$background-color;
+  border-bottom: 1px solid v.$light-gray;
+  z-index: 10;
+
+  @media screen and (max-width: 600px) {
+    padding: 15px v.$mobile-padding;
+  }
+}
+
+.logo {
+  margin-bottom: 0;
+
+  @media screen and (v.$mobile) {
+    flex: 0 0 50%;
+  }
+
+  a {
+    border: none;
+  }
+}
