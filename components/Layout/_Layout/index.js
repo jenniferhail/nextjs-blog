@@ -6,17 +6,17 @@ import Link from 'next/link'
 import Header from '../Header'
 
 const name = 'Jen Hail'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = name + ' - Creative Front End Developer'
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
+        {/* <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
-        />
+        /> */}
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
