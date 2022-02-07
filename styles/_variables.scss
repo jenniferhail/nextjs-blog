@@ -34,23 +34,30 @@ $alert-color: transparent;
 $color-selection: $light-gray;
 
 // Breakpoints
-$mobile: "max-width: 600px";
-$small: "max-width: 768px";
-$large: "min-width: 769px";
-
-$laptop: "max-width: 1260px";
-$tablet: "max-width: 768px";
-$mobile-lg: "max-width: 640px";
-$mobile-sm: "max-width: 480px";
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop-sm: 1200px;
+$desktop: 1440px;
+$sm: $mobile;
+$md: $tablet;
+$lg: $laptop;
+$xl: $desktop;
+$breakpoints: (
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+);
 
 $padding: 45px;
 $mobile-padding: 20px;
 
 // Typography
-@import url("https://fonts.googleapis.com/css?family=Inter:300,400,500|Montserrat:300,400,500|Roboto:300,400,500&display=swap");
-$montserrat: "Montserrat", sans-serif;
-$inter: "Inter", sans-serif;
-$roboto: "Roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500|Montserrat:300,400,500|Roboto:300,400,500&display=swap');
+$montserrat: 'Montserrat', sans-serif;
+$inter: 'Inter', sans-serif;
+$roboto: 'Roboto', sans-serif;
 $base-font-family: $roboto; // 'Helvetica Neue', Helvetica, Arial;
 $heading-font-family: $base-font-family;
 
@@ -69,7 +76,7 @@ $heading-font-weight: $base-font-weight;
 // Other Sizes
 $base-border-radius: 0px;
 $base-spacing: 1.5em;
-$small-spacing: $base-spacing / 2;
+$small-spacing: calc(#{$base-spacing} / 2);
 $base-z-index: 0;
 
 // Border

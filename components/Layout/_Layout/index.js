@@ -4,6 +4,7 @@ import styles from './index.module.scss'
 import utilStyles from '../../../styles/utils.module.scss'
 import Link from 'next/link'
 import Header from '../Header'
+import Footer from '../Footer'
 
 const name = 'Jen Hail'
 export const siteTitle = name + ' - Creative Front End Developer'
@@ -35,6 +36,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <Footer />
     </div>
   )
 }

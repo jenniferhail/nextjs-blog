@@ -2,19 +2,18 @@
 @use '../../../styles/typography' as t;
 
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 45px;
   align-items: center;
-
-  position: fixed;
-  width: 100%;
-  padding: 15px v.$padding;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: v.$background-color;
   border-bottom: 1px solid v.$light-gray;
+  display: grid;
+  gap: 45px;
+  grid-template-columns: 1fr 1fr;
+  left: 0;
+  padding: 15px v.$padding;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
   z-index: 10;
 
   @media screen and (max-width: 600px) {
