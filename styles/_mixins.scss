@@ -67,7 +67,9 @@
 
 @mixin hover {
   @media (hover: hover) {
-    @content;
+    &:hover {
+      @content;
+    }
   }
 }
 
@@ -107,13 +109,11 @@
   background: url('/images/underline-transparent.png') repeat-x 100% 100%;
   transition: all 200ms ease-in-out;
 
-  &:hover {
-    @include hover {
-      @if $dark {
-        background: url('/images/underline-black.png') repeat-x 100% 82%;
-      } @else {
-        background: url('/images/underline-white.jpeg') repeat-x 100% 82%;
-      }
+  @include hover {
+    @if $dark {
+      background: url('/images/underline-black.png') repeat-x 100% 82%;
+    } @else {
+      background: url('/images/underline-white.jpeg') repeat-x 100% 82%;
     }
   }
 }

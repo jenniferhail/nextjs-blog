@@ -18,11 +18,6 @@
   }
 }
 
-.list {
-  border-top: v.$base-border;
-  padding-top: v.$mobile-padding;
-}
-
 .section {
   padding-bottom: v.$bottom;
   padding-top: v.$bottom;
@@ -39,7 +34,5 @@
 
   h3 {
     @include t.h3;
-
-    margin-bottom: 10px;
   }
 }

@@ -73,7 +73,7 @@ $h6-line-height: 1.5;
 
 @mixin h3 {
   @include heading-style($h3-font-size, $h3-line-height);
-  font-weight: v.$heading-font-weight;
+  font-weight: 500;
 }
 
 @mixin h4 {
