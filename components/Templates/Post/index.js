@@ -24,12 +24,12 @@ const Post = ({ postData }) => {
           <div className={styles.welcome}>
             <h4>Hi, I&apos;m Jen!</h4>
             <p>
-              Welcome to my blog — a place where I really don't know what I'm
-              doing yet, but I want to create and write and see what sticks.
-              You'll probably find thoughts on personal style, money, frontend
-              development and occasional travel, among other things. I want to
-              help you find simplicity in your day-to-day and curate a beautiful
-              life. Let's see how this goes!
+              Welcome to my blog — a place where I really don&apos;t know what
+              I&apos;m doing yet, but I want to create and write and see what
+              sticks. You&apos;ll probably find thoughts on personal style,
+              money, frontend development and occasional travel, among other
+              things. I want to help you find simplicity in your day-to-day and
+              curate a beautiful life. Let&apos;s see how this goes!
             </p>
             <Link href={'/'}>
               <a className={styles.button}>About Me</a>
