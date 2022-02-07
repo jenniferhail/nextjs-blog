@@ -1,7 +1,10 @@
-@use '../../../styles/variables' as v;
+@use '../../../styles/mixins' as m;
 @use '../../../styles/typography' as t;
+@use '../../../styles/variables' as v;
 
 .header {
+  @include m.site-padding;
+
   align-items: center;
   background-color: v.$background-color;
   border-bottom: 1px solid v.$light-gray;
@@ -9,16 +12,11 @@
   gap: 45px;
   grid-template-columns: 1fr 1fr;
   left: 0;
-  padding: 15px v.$padding;
   position: fixed;
   right: 0;
   top: 0;
   width: 100%;
   z-index: 10;
-
-  @media screen and (max-width: 600px) {
-    padding: 15px v.$mobile-padding;
-  }
 }
 
 .logo {

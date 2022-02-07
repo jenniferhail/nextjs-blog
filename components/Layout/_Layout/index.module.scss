@@ -1,11 +1,14 @@
+@use '../../../styles/mixins' as m;
+@use '../../../styles/typography' as t;
 @use '../../../styles/variables' as v;
 
 .container {
+  @include m.site-padding;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  padding: 0 v.$padding;
 }
 
 .header {

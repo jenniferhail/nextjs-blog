@@ -1,10 +1,13 @@
-@use '../../../styles/variables' as v;
+@use '../../../styles/mixins' as m;
 @use '../../../styles/typography' as t;
+@use '../../../styles/variables' as v;
 
 .section {
-  display: grid;
-  gap: 45px;
-  grid-template-columns: 1fr 1fr;
+  @include m.breakpoint(v.$md) {
+    display: grid;
+    gap: 45px;
+    grid-template-columns: 1fr 1fr;
+  }
 
   h1 {
     @include t.h1;

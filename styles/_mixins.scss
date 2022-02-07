@@ -77,6 +77,16 @@
   padding: 0;
 }
 
+@mixin site-padding {
+  @include breakpoint-max(v.$md) {
+    padding: 15px v.$mobile-padding;
+  }
+
+  @include breakpoint(v.$md) {
+    padding: 15px v.$padding;
+  }
+}
+
 @mixin typography($font: v.$font-primary, $size, $height, $spacing) {
   font-family: $font;
   font-size: map-get($size, sm);
