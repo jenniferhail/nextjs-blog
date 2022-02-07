@@ -5,9 +5,9 @@
 .footer {
   background-color: v.$bg;
   display: grid;
-  gap: 45px;
+  gap: v.$padding;
   grid-template-columns: 1fr;
-  padding: 45px 0;
+  padding: v.$padding 0;
 
   @include m.breakpoint(v.$md) {
     grid-template-columns: 1fr 1fr;
@@ -41,7 +41,7 @@
 .list {
   @include m.remove-list-formatting;
 
-  column-gap: 45px;
+  column-gap: v.$padding;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }

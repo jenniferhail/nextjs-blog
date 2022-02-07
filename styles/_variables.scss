@@ -52,6 +52,7 @@ $breakpoints: (
 
 $padding: 45px;
 $mobile-padding: 20px;
+$main-padding: calc(55px + $padding);
 
 // Typography
 @import url('https://fonts.googleapis.com/css?family=Inter:300,400,500|Montserrat:300,400,500|Roboto:300,400,500&display=swap');

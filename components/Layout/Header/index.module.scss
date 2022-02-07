@@ -9,9 +9,11 @@
   background-color: v.$background-color;
   border-bottom: 1px solid v.$light-gray;
   display: grid;
-  gap: 45px;
+  gap: v.$padding;
   grid-template-columns: 1fr 1fr;
   left: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
   position: fixed;
   right: 0;
   top: 0;

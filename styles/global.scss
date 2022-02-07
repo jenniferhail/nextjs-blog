@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  padding-top: calc(55px + v.$padding);
+  padding-top: v.$main-padding;
 }
 
 *,
@@ -45,7 +45,7 @@ hr {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: 45px 0 10px;
+  margin: v.$padding 0 10px;
 }
 
 blockquote {

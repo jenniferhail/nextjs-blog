@@ -6,6 +6,7 @@ import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
 import Date from '../components/Pieces/Date'
 import RichText from '../components/Blocks/RichText'
+import ImageGrid from '../components/Blocks/ImageGrid'
 
 export default function Home({ allPostsData }) {
   return (
@@ -13,6 +14,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <ImageGrid />
       <RichText position="right">
         <h2>About Me</h2>
         <h3>Web Developer + Designer</h3>

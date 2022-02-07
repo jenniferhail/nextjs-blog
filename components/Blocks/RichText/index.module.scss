@@ -5,7 +5,7 @@
 .section {
   @include m.breakpoint(v.$md) {
     display: grid;
-    gap: 45px;
+    gap: v.$padding;
     grid-template-columns: 1fr 1fr;
   }
 
