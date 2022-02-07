@@ -35,7 +35,7 @@ $BORDER: 10px;
   display: grid;
   gap: v.$mobile-padding;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 12em;
+  margin-bottom: v.$bottom;
   padding-top: calc(
     100vh - v.$main-padding - v.$mobile-padding - ($BORDER * 2) -
       (((100vw - (v.$mobile-padding * 3)) / 2) * $IMAGE_RATIO)

@@ -1,12 +1,9 @@
-import cn from 'classnames'
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/Layout/_Layout'
 import { getSortedPostsData } from '../lib/posts'
-import utilStyles from '../styles/utils.module.scss'
-import Link from 'next/link'
-import Date from '../components/Pieces/Date'
 import RichText from '../components/Blocks/RichText'
 import ImageGrid from '../components/Blocks/ImageGrid'
+import PostList from '../components/Blocks/PostList'
 
 export default function Home({ allPostsData }) {
   return (
@@ -43,22 +40,7 @@ export default function Home({ allPostsData }) {
           <br />⚡ Fun fact: I&apos;m from Kentucky, so bourbon &gt; whiskey. 🥃
         </p>
       </RichText>
-      <section className={cn(utilStyles.headingMd, utilStyles.padding1px)}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <PostList posts={allPostsData} />
     </Layout>
   )
 }

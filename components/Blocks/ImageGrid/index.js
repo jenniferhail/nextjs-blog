@@ -23,6 +23,7 @@ const ImageGrid = () => {
       style={{ '--vh': vh * 0.01 + 'px', '--vw': vw * 0.01 + 'px' }}>
       <Tilt className={styles.image} options={tiltOptions}>
         <Image
+          priority
           src="/images/smile.jpg"
           alt="Black and white photo of Jennifer, smiling on a sidewalk"
           layout="fill"
@@ -31,6 +32,7 @@ const ImageGrid = () => {
       </Tilt>
       <Tilt className={styles.image} options={tiltOptions}>
         <Image
+          priority
           src="/images/light-2.jpg"
           alt="Black and white photo of Jennifer, smiling on a sidewalk"
           layout="fill"
@@ -39,6 +41,7 @@ const ImageGrid = () => {
       </Tilt>
       <Tilt className={styles.image} options={tiltOptions}>
         <Image
+          priority
           src="/images/my-desk.jpg"
           alt="Black and white photo of Jennifer, smiling on a sidewalk"
           layout="fill"

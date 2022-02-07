@@ -1,0 +1,45 @@
+@use '../../../styles/mixins' as m;
+@use '../../../styles/typography' as t;
+@use '../../../styles/variables' as v;
+
+.category {
+  @include t.uppercase-style;
+  padding-top: 7px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px 0;
+
+  a {
+    border-bottom: v.$base-border;
+  }
+}
+
+.list {
+  border-top: v.$base-border;
+  padding-top: v.$mobile-padding;
+}
+
+.section {
+  padding-bottom: v.$bottom;
+  padding-top: v.$bottom;
+
+  @include m.breakpoint(v.$md) {
+    display: grid;
+    gap: v.$padding;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h2 {
+    @include t.h2;
+  }
+
+  h3 {
+    @include t.h3;
+
+    margin-bottom: 10px;
+  }
+}
