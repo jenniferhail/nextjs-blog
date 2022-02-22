@@ -31,12 +31,30 @@ const Post = ({ postData }) => {
               things. I want to help you find simplicity in your day-to-day and
               curate a beautiful life. Let&apos;s see how this goes!
             </p>
-            <Link href={'/'}>
-              <a className={styles.button}>About Me</a>
-            </Link>
-            <p>Social Links Here</p>
+            <ul className={styles.social}>
+              <li className={styles.icon}>
+                <a href="https://instagram.com/jenhail">
+                  <Image
+                    src="/images/instagram.svg"
+                    width={20}
+                    height={20}
+                    alt="Instagram icon"
+                  />
+                </a>
+              </li>
+              <li className={styles.icon}>
+                <a href="https://twitter.com/jennhailll">
+                  <Image
+                    src="/images/twitter.svg"
+                    width={20}
+                    height={20}
+                    alt="Twitter icon"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
-          <div className={styles.favorites}>
+          {/* <div className={styles.favorites}>
             <h4>Favorites</h4>
             <div className={styles.favorite}>
               <div className={styles.post}>
@@ -63,7 +81,7 @@ const Post = ({ postData }) => {
           </div>
           <Link href={'/'}>
             <a className={styles.button}>View All Posts</a>
-          </Link>
+          </Link> */}
         </aside>
         <article className={styles.article}>
           <div className={styles.meta}>

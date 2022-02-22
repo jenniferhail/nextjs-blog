@@ -123,3 +123,11 @@
   padding-bottom: 100%;
   position: relative;
 }
+
+.social li {
+  display: inline-block;
+
+  a {
+    padding: 0 8px;
+  }
+}
