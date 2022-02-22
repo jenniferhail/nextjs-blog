@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Date from '../../Pieces/Date'
 import styles from './index.module.scss'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const Post = ({ postData }) => {
   const { category, title, date, contentHtml } = postData
@@ -33,7 +32,10 @@ const Post = ({ postData }) => {
             </p>
             <ul className={styles.social}>
               <li className={styles.icon}>
-                <a href="https://instagram.com/jenhail">
+                <a
+                  href="https://instagram.com/jenhail"
+                  target="_blank"
+                  rel="noreferrer">
                   <Image
                     src="/images/instagram.svg"
                     width={20}
@@ -43,7 +45,10 @@ const Post = ({ postData }) => {
                 </a>
               </li>
               <li className={styles.icon}>
-                <a href="https://twitter.com/jennhailll">
+                <a
+                  href="https://twitter.com/jennhailll"
+                  target="_blank"
+                  rel="noreferrer">
                   <Image
                     src="/images/twitter.svg"
                     width={20}
