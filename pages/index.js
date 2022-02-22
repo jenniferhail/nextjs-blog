@@ -30,13 +30,26 @@ export default function Home({ allPostsData }) {
       </RichText>
       <RichText position="right">
         <p>
-          🔭 I’m currently working on cool projects at Use All Five
+          💪🏻 I&apos;m currently working out with the Pretty Muscles &amp; Obé
+          apps
           <br />
-          🌱 I’m learning Three.js & WebGL
+          🌱 I&apos;m learning{' '}
+          <a
+            href="https://threejs-journey.xyz/"
+            target="_blank"
+            rel="noreferrer">
+            Three.js &amp; WebGL
+          </a>
           <br />
           💬 Ask me about my coffee & matcha latte setup. 🍵 🖤 ☕️
           <br />
-          📫 Get in touch: hello@jenniferhail.com
+          📫 Get in touch:{' '}
+          <a
+            href="mailto:hello@jenniferhail.com"
+            target={'_blank'}
+            rel="noreferrer">
+            hello@jenniferhail.com
+          </a>
           <br />⚡ Fun fact: I&apos;m from Kentucky, so bourbon &gt; whiskey. 🥃
         </p>
       </RichText>
