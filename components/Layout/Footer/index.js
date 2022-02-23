@@ -13,8 +13,6 @@ const Footer = (props) => {
       <div className={styles.contact}>
         <h4>Contact</h4>
         <p>
-          Jennifer Hail
-          <br />
           <a href="mailto:hi@jenhail.com">hi@jenhail.com</a>
         </p>
       </div>
