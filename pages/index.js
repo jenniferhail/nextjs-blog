@@ -44,11 +44,8 @@ export default function Home({ allPostsData }) {
           💬 Ask me about my coffee & matcha latte setup. 🍵 🖤 ☕️
           <br />
           📫 Get in touch:{' '}
-          <a
-            href="mailto:hello@jenniferhail.com"
-            target={'_blank'}
-            rel="noreferrer">
-            hello@jenniferhail.com
+          <a href="mailto:hi@jenhail.com" target={'_blank'} rel="noreferrer">
+            hi@jenhail.com
           </a>
           <br />⚡ Fun fact: I&apos;m from Kentucky, so bourbon &gt; whiskey. 🥃
         </p>

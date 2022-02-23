@@ -15,7 +15,7 @@ const Footer = (props) => {
         <p>
           Jennifer Hail
           <br />
-          <a href="mailto:hello@jenniferhail.com">hello@jenniferhail.com</a>
+          <a href="mailto:hi@jenhail.com">hi@jenhail.com</a>
         </p>
       </div>
       <div className={styles.social}>
